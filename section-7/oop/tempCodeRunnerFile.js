@@ -1,1 +1,2 @@
-jonas.calcAge()
+tName;
+        // this.birthYear = birthYear;

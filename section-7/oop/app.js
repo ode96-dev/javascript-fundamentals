@@ -94,10 +94,10 @@ console.log(account.latest);
 // }
 class Student extends Person {
     constructor(firstName, birthYear, courseName) {
-        super();
-        this.firstName = firstName;
-        this.birthYear = birthYear;
+        //always needs to happen first
+        super(firstName, birthYear); //passing arguments of the constructor of the parent class
         this.courseName = courseName;
+
     }
 }
 
