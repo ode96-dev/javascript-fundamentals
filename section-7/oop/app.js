@@ -30,12 +30,12 @@
 class Person {
     constructor(firstName, birthYear) {
         console.log(this); //1. empty object
-        this.firstName = firstName;
+        this._firstName = firstName;
         this.birthYear = birthYear;
 
     }
     greet() {
-        console.log(`hey ${this.firstName}`);
+        console.log(`hey ${this._firstName}`);
     }
 }
 //the only difference between regular and constructor functions is that the constructor function is called by "new"
@@ -103,3 +103,16 @@ class Student extends Person {
 
 const mike = new Student('mike', 2023, 'computer science');
 console.log(mike);
+
+/** 
+ * //TODO: encapsulation
+ * add _ to the intended property.
+ * 
+ * there are:
+ * 1. public fields
+ * 2. private fields
+ * 3. public methods
+ * 4. private methods
+ * 
+ * 
+ */
